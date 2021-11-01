@@ -16,6 +16,7 @@
       border: 1px solid black;
       max-width: 500px;
       margin-bottom: 10px;
+      height: 150px;
     }
 
     .Default{
@@ -35,6 +36,18 @@
       width: 100px;
       height: 50px;
       line-height: 50px;
+    }
+
+    .R-NoWrap{
+      flex-flow: row-reverse nowrap;
+    }
+
+    .R-Wrap{
+      flex-flow: row-reverse wrap;
+    }
+
+    .RR-Wrap{
+      flex-flow: row-reverse wrap-reverse;
     }
 
   </style>
@@ -61,7 +74,7 @@
     <div class="Item">3</div>
     <div class="Item">4</div>
     <div class="Item">5</div>
-    <div class="Item">6
+    <div class="Item">6</div>
     </div>
   </div>
 
@@ -73,20 +86,45 @@
     <div class="Item">3</div>
     <div class="Item">4</div>
     <div class="Item">5</div>
-    <div class="Item">6
+    <div class="Item">6</div>
     </div>
 
   <h1>Row-Reverse NoWrap</h1>
   
-  <div class="Flex-Container Wrap-Reverse">
+  <div class="Flex-Container R-NoWrap">
     <div class="Item">1</div>
     <div class="Item">2</div>
     <div class="Item">3</div>
     <div class="Item">4</div>
     <div class="Item">5</div>
-    <div class="Item">6
+    <div class="Item">6</div>
+    <div class="Item">7</div>
   </div> 
+
+  <h1>Row-Reverse R-Wrap</h1>
   
+  <div class="Flex-Container R-Wrap">
+    <div class="Item">1</div>
+    <div class="Item">2</div>
+    <div class="Item">3</div>
+    <div class="Item">4</div>
+    <div class="Item">5</div>
+    <div class="Item">6</div>
+    <div class="Item">7</div>
+  </div>
+
+  <h1>Row-Reverse Wrap-Reverse</h1>
+  
+  <div class="Flex-Container RR-Wrap">
+    <div class="Item">1</div>
+    <div class="Item">2</div>
+    <div class="Item">3</div>
+    <div class="Item">4</div>
+    <div class="Item">5</div>
+    <div class="Item">6</div>
+    <div class="Item">7</div>
+  </div>
+
 </body>
 
 </html>
