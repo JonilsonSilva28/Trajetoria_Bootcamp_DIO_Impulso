@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fundamentos - Align Items</title>
+  
+  <style>
+    
+    .Container{
+      max-width: 350px;
+      border: 1px solid black;
+      display: flex;
+    }
+    .Item{
+      background-color: brown;
+      margin: 5px;
+      color: white;
+      text-align: center;
+      flex: 1;
+    }
+
+    .Flex{
+      flex: 1;
+    }
+
+    .Center{
+      align-items: center;
+    }
+
+    .Stretch{
+      align-items: stretch;
+    }
+
+    .Start{
+      align-items: flex-start;
+    }
+
+    .End{
+      align-items: flex-end;
+    }
+
+    .BaseLine{
+      align-items: baseline;
+    }
+
+    .Column{
+      flex-direction: column;
+    }
+
+    .Central{
+      height: 300px;
+      justify-content: center;
+    }
+
+    .Central .Item{
+      flex: 0;
+      padding: 20px;
+    }
+  </style>
+
+</head>
+
+<body>
+  <h1>Row</h1>
+  <p>Center</p>
+  
+  <section class="Container Center Flex">
+    <div class="Item">Item 1</div>
+    <div class="Item">Lorem ipsum dolor sit amet</div>
+    <div class="Item">Item 3 Mais algum texto.Lipsum</div>
+  </section>
+
+  <p>Stretch</p>
+
+  <section class="Container Stretch">
+    <div class="Item">Item 1</div>
+    <div class="Item">Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet</div>
+    <div class="Item">Item 3 Mais algum texto.Lipsum</div>
+  </section>
+
+  <p>Flex-Start</p>
+
+  <section class="Container Start">
+    <div class="Item">Item 1</div>
+    <div class="Item">Lorem ipsum dolor sit amet</div>
+    <div class="Item">Item 3 Mais algum texto.Lipsum</div>
+  </section>
+
+  <p>Flex-End</p>
+
+  <section class="Container End">
+    <div class="Item">Item 1</div>
+    <div class="Item">Lorem ipsum dolor sit amet</div>
+    <div class="Item">Item 3 Mais algum texto.Lipsum</div>
+  </section>
+
+  <p>BaseLine</p>
+
+  <section class="Container BaseLine">
+    <div class="Item"><br>Item 1</div>
+    <div class="Item">Lorem ipsum dolor sit amet</div>
+    <div class="Item">Item 3 Mais algum texto.Lipsum</div>
+  </section>
+  
+  <h1>Column</h1>
+  <p>Flex-Start</p>
+
+  <section class="Container Start Column">
+    <div class="Item">Item 1</div>
+    <div class="Item">Lorem ipsum dolor sit amet</div>
+    <div class="Item">Item 3 Mais algum texto.Lipsum</div>
+  </section>
+
+  <p>Flex-End</p>
+
+  <section class="Container End Column">
+    <div class="Item">Item 1</div>
+    <div class="Item">Lorem ipsum dolor sit amet</div>
+    <div class="Item">Item 3 Mais algum texto.Lipsum</div>
+  </section>
+
+  <p>Center</p>
+  
+  <section class="Container Center Flex Column">
+    <div class="Item">Item 1</div>
+    <div class="Item">Lorem ipsum dolor sit amet</div>
+    <div class="Item">Item 3 Mais algum texto.Lipsum</div>
+  </section>
+
+  <p>BaseLine</p>
+
+  <section class="Container BaseLine Column">
+    <div class="Item"><br>Item 1</div>
+    <div class="Item">Lorem ipsum dolor sit amet</div>
+    <div class="Item">Item 3 Mais algum texto.Lipsum</div>
+  </section>
+  
+  <p>Alinhamento Central</p>
+  <section class="Container Central Center">
+    <div class="Item">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+  </section>
+
+</body>
+
+</html>
