@@ -13,7 +13,7 @@
         }
 
         .align-container{
-            align-items: center;
+            align-items: flex-end;
         }
 
         .item{
@@ -47,6 +47,10 @@
         .auto{
             align-self: auto;
         }
+
+        .direction{
+            flex-direction:column ;
+        }
     </style>
 </head>
 <body>
@@ -73,21 +77,21 @@
     </section>
     <h1>column</h1>
 
-    <section class="flex-container align-container">
+    <section class="flex-container align-container direction">
         <div class="item auto">AAA</div>
         <div class="item auto">123</div>
         <div class="item auto">Lorem ipsum is therefore always free from repetition</div>
         <div class="item auto">ITEM 4</div>
     </section>
 
-    <section class="flex-container align-container">
+    <section class="flex-container align-container direction">
         <div class="item center">AAA</div>
         <div class="item start">123</div>
         <div class="item stretch">Lorem ipsum is therefore always free from repetition</div>
         <div class="item end">ITEM 4</div>
     </section>
 
-    <section class="flex-container align-container">
+    <section class="flex-container align-container direction">
         <div class="item center">AAA</div>
         <div class="item start">AAAaaaaaaaa</div>
         <div class="item end">AAAaaaaaaaaaaa</div>
